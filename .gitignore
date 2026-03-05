@@ -1,0 +1,29 @@
+# This .gitignore file should be placed at the root of your Unity project directory.
+#
+# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
+#
+# Unity generated folders
+/[L]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Logs/
+/MemoryCaptures/
+/PlayerDataCache/
+
+# Unity generated file
+*.unityproj
+*.unity
+*.orig
+*.meta.orig
+*.unity.meta
+*.pbd
+
+# Visual Studio cache directory
+.vs/
+
+# Mac
+.DS_Store
+#
+# End of Unity generated folders
