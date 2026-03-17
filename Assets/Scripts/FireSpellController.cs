@@ -14,14 +14,11 @@ public class FireSpellController : MonoBehaviour
     [SerializeField] private GameObject previewPrefab;
 
     [Header("Settings")]
-    [SerializeField] private LayerMask objectLayer;
+    [SerializeField] private LayerMask hitObjectLayer;
     [SerializeField] private GameObject target;
     [SerializeField] private KeyCode fireSpellKey = KeyCode.Alpha2;
     [SerializeField] private GameObject handTarget;
     [SerializeField] private Vector3 previewOffset = new Vector3(0, 0.31f, 0);
-
-    [Header("Special Effects")] [SerializeField]
-    private GameObject effect1Prefab;
 
     [Header("Rigging")] 
     [SerializeField] private RigBuilder rigBuilder;
@@ -71,12 +68,10 @@ public class FireSpellController : MonoBehaviour
         if (_isPlacementModeActive)
         {
             Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, 100f, objectLayer))
+            if (Physics.Raycast(ray, out RaycastHit hit, 100f, hitObjectLayer))
             {
                 currentHitPoint = hit.point;
                 PlaceObject(hit.point);
-                
-                // rightArmTarget.transform.position = currentHitPoint.Value;
             }
         }
     }
@@ -84,7 +79,6 @@ public class FireSpellController : MonoBehaviour
     
     private void ToggleSpellMode()
     {
-        
         _isPlacementModeActive = !_isPlacementModeActive;
 
         if (_isPlacementModeActive)
@@ -119,7 +113,6 @@ public class FireSpellController : MonoBehaviour
                 0f, 1.0f).SetEase(Ease.OutCubic);
 
             GameObject objectToDestroy = _currentPreview;
-            // _currentPreview = null;
 
             _currentPreview.transform.DOScale(0f, 0.4f).SetEase(Ease.OutBack);
 
@@ -150,8 +143,6 @@ public class FireSpellController : MonoBehaviour
         
         Vector3 spawnPos = _currentPreview.transform.position;
         spawnPos.y += 0.75f;
-
-        // ToggleSpellMode();
 
         Sequence spawnSequence = DOTween.Sequence();
         spawnSequence.AppendCallback(() =>
