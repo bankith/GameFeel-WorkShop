@@ -9,12 +9,8 @@ Welcome to the **Interactive Animation** workshop! This repository contains the 
 In this session, we will focus on the core principles of "Game Feel" — exploring how to make games feel smooth, responsive, and satisfying by improving the quality of player interactions.
 
 ## 🎬 Sneak Peek
-*(Replace the link below with your actual video file path. GitHub supports dragging and dropping .mp4 files directly into the edit window!)*
 
-<div align="center">
-  <video src="ReadmeAssets/preview.mov" width="100%" controls="controls">
-  </video>
-</div>
+https://youtu.be/8mS2fZ__XdY
 
 ## 📚 Topics Covered
 
