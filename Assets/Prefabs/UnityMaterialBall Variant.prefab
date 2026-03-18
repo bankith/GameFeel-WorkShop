@@ -211,3 +211,4 @@ MonoBehaviour:
   _targetWidth: 6.2
   _duration: 0.25
   customHeadLookAtTarget: {fileID: 0}
+  isEnableDotween: 1

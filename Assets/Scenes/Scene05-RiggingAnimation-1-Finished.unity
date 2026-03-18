@@ -20874,7 +20874,7 @@ MonoBehaviour:
   previewPrefab: {fileID: 1692517446758730, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
   hitObjectLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   target: {fileID: 959683036}
   fireSpellKey: 50
   handTarget: {fileID: 668327241}

@@ -20869,14 +20869,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FireSpellController
   prefabToSpawn: {fileID: 1845955007268882, guid: 67a684e320da6e7439421a07e3fa265c, type: 3}
   previewPrefab: {fileID: 1692517446758730, guid: 08fd1b80cc24cc8439f45fda3c558255, type: 3}
-  objectLayer:
+  hitObjectLayer:
     serializedVersion: 2
     m_Bits: 512
   target: {fileID: 959683036}
   fireSpellKey: 50
   handTarget: {fileID: 668327241}
   previewOffset: {x: 0, y: 0.31, z: 0}
-  effect1Prefab: {fileID: 0}
   rigBuilder: {fileID: 447887022}
   twoBoneIKConstraint: {fileID: 89191767}
   customHeadLookAtTarget: {fileID: 2031514761}
